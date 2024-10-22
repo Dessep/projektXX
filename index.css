@@ -16,28 +16,40 @@
 html {
     height: 100%;
 }
-body {
-    display: flex;
-    height: inherit;
-    position: relative;
-    width: 100%;
-    min-width: 100px;
-    overflow: hidden;
-    margin: 0;
+.main {
+    height: 100%;
+    display: flex; 
+    object-fit: cover; 
+    position: relative; 
+    margin: 0px; 
 }
-.lol {
-    width: 100vw;
+.lol{
+    position: absolute;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
+.ideal{
+    color: black;
+    z-index: 1;
+    margin: 0 auto;
+    font-size: 120px;
+    width: 739px;
+    height: 408px;
+    text-align: center;
+    font-family: "font1";
+  }
+  .ideal::after{
+    content: "*";
+    }
 .ideal:hover::before {
     content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.'; 
     white-space: pre; 
-    position: inherit; 
-    width: 800px;
-    height: 90px; 
-    right: -400px;
+    position: absolute; 
+    width: 660px;
+    height: 90px;
+    right: 0px; 
     margin: 180px 20px 562px 834px;
     border-radius: 15px 15px;
     font-size: 33px; 
@@ -46,19 +58,12 @@ body {
     border: 3px solid black; 
     background-color: white;  
     box-shadow: 0 5px 0 black; 
-    color: black;
-}
-.ideal {
-    position: absolute;
-    margin: 60px 430px 432px 580px;
-    font-size: 130px;
-    width: 739px;
-    text-align: center;
-    font-family: "font1";
-}
-.ideal::after {
-   content: "*";
-}
-.ideal:hover {
-    color: rgb(121, 121, 121);
-}
+    color: rgb(0, 0, 0);
+  }
+  .ideal:hover + .lol {
+    background-color: gray;
+    opacity: 0.8;
+  }
+  .ideal:hover{
+    color: gray; 
+  }
