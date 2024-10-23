@@ -3,16 +3,6 @@
 *::after {
     box-sizing: border-box;
 }
-@font-face {
-    font-family: "font";
-    src: url(./fonts/Raleway-ExtraBold.woff),
-         url(./fonts/Raleway-ExtraBold.woff2);
-}
-@font-face {
-    font-family: "font1";
-    src: url(./fonts/Raleway-Regular.woff),
-         url(./fonts/Raleway-Regular.woff2);
-}
 html {
     height: 100%;
 }
@@ -67,3 +57,13 @@ html {
   .ideal:hover{
     color: gray; 
   }
+  @font-face {
+    font-family: "font";
+    src: url(./fonts/Raleway-ExtraBold.woff),
+         url(./fonts/Raleway-ExtraBold.woff2);
+}
+@font-face {
+    font-family: "font1";
+    src: url(./fonts/Raleway-Regular.woff),
+         url(./fonts/Raleway-Regular.woff2);
+}
